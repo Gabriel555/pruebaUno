@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--On Boarding Primera View Controller-->
         <scene sceneID="P5C-Le-954">
             <objects>
-                <viewController id="j5K-UN-T2v" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kc5-dV-VWX">
+                <viewController storyboardIdentifier="onboardingBienvenida" id="j5K-UN-T2v" customClass="OnBoardingPrimeraViewController" customModule="prueba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kc5-dV-VWX" customClass="On">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -28,36 +28,47 @@
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CT-pn-pay">
-                                <rect key="frame" x="56" y="666" width="303" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CT-pn-pay">
+                                <rect key="frame" x="56" y="712" width="303" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="w1H-sw-dYf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="NEXT -&gt;">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="botonsiguiente:" destination="j5K-UN-T2v" eventType="touchUpInside" id="F9e-mn-hfb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wnK-5A-HA2" firstAttribute="centerX" secondItem="Kc5-dV-VWX" secondAttribute="centerX" id="MhZ-0F-LGw"/>
+                            <constraint firstItem="RkN-gl-UrH" firstAttribute="trailing" secondItem="3CT-pn-pay" secondAttribute="trailing" constant="55" id="U5H-mX-ujt"/>
+                            <constraint firstItem="RkN-gl-UrH" firstAttribute="trailing" secondItem="3CT-pn-pay" secondAttribute="trailing" constant="55" id="XH4-Ah-FwL"/>
+                            <constraint firstItem="3CT-pn-pay" firstAttribute="leading" secondItem="RkN-gl-UrH" secondAttribute="leading" constant="56" id="e5D-rt-enz"/>
+                            <constraint firstItem="RkN-gl-UrH" firstAttribute="bottom" secondItem="3CT-pn-pay" secondAttribute="bottom" constant="101" id="j5K-8O-jvi"/>
+                            <constraint firstItem="3CT-pn-pay" firstAttribute="leading" secondItem="RkN-gl-UrH" secondAttribute="leading" constant="56" id="lSH-Hv-udy"/>
                             <constraint firstItem="wnK-5A-HA2" firstAttribute="centerY" secondItem="Kc5-dV-VWX" secondAttribute="centerY" id="ncm-pz-CEC"/>
+                            <constraint firstItem="RkN-gl-UrH" firstAttribute="bottom" secondItem="3CT-pn-pay" secondAttribute="bottom" constant="101" id="zMv-0V-DLA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RkN-gl-UrH"/>
                     </view>
                     <connections>
-                        <segue destination="mkY-lG-TiZ" kind="show" id="iKA-MZ-9VG"/>
+                        <segue destination="mkY-lG-TiZ" kind="show" identifier="PriemeraASegunda" id="iKA-MZ-9VG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8H-gw-gMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5.7971014492753632" y="65.625"/>
         </scene>
-        <!--View Controller-->
+        <!--On Boarding Segunda View Controller-->
         <scene sceneID="999-SZ-pyG">
             <objects>
-                <viewController id="mkY-lG-TiZ" sceneMemberID="viewController">
+                <viewController id="mkY-lG-TiZ" customClass="OnBoardingSegundaViewController" customModule="prueba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afP-md-l3X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,18 +83,22 @@
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGk-d1-efz">
-                                <rect key="frame" x="30" y="678" width="354" height="95"/>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGk-d1-efz">
+                                <rect key="frame" x="30" y="724" width="354" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="NEXT -&gt;">
+                                <state key="normal" title="COMENCEMOS 😌">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="botonComienzo:" destination="mkY-lG-TiZ" eventType="touchUpInside" id="Lz8-UJ-aFV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="PeE-Ul-RqT" firstAttribute="bottom" secondItem="nGk-d1-efz" secondAttribute="bottom" constant="89" id="AJ4-5f-xMX"/>
                             <constraint firstItem="1Ku-49-Kiu" firstAttribute="centerY" secondItem="afP-md-l3X" secondAttribute="centerY" id="IeK-ky-lMh"/>
                             <constraint firstItem="1Ku-49-Kiu" firstAttribute="centerX" secondItem="afP-md-l3X" secondAttribute="centerX" id="ehn-uT-RHK"/>
                             <constraint firstItem="nGk-d1-efz" firstAttribute="leading" secondItem="PeE-Ul-RqT" secondAttribute="leading" constant="30" id="qDR-to-9mm"/>

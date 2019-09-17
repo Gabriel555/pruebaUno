@@ -13,6 +13,8 @@
 		0CD533FF2331871100C9C1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CD533FE2331871100C9C1C6 /* Assets.xcassets */; };
 		0CD534022331871100C9C1C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD534002331871100C9C1C6 /* LaunchScreen.storyboard */; };
 		0CD5340A23318D0D00C9C1C6 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CD5340923318D0D00C9C1C6 /* Onboarding.storyboard */; };
+		0CD5340C233191B000C9C1C6 /* OnBoardingPrimeraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5340B233191B000C9C1C6 /* OnBoardingPrimeraViewController.swift */; };
+		0CD5340E233191F100C9C1C6 /* OnBoardingSegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5340D233191F100C9C1C6 /* OnBoardingSegundaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0CD534012331871100C9C1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CD534032331871100C9C1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CD5340923318D0D00C9C1C6 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		0CD5340B233191B000C9C1C6 /* OnBoardingPrimeraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPrimeraViewController.swift; sourceTree = "<group>"; };
+		0CD5340D233191F100C9C1C6 /* OnBoardingSegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSegundaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				0CD534002331871100C9C1C6 /* LaunchScreen.storyboard */,
 				0CD534032331871100C9C1C6 /* Info.plist */,
 				0CD5340923318D0D00C9C1C6 /* Onboarding.storyboard */,
+				0CD5340B233191B000C9C1C6 /* OnBoardingPrimeraViewController.swift */,
+				0CD5340D233191F100C9C1C6 /* OnBoardingSegundaViewController.swift */,
 			);
 			path = prueba;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CD533FA2331871000C9C1C6 /* ViewController.swift in Sources */,
+				0CD5340E233191F100C9C1C6 /* OnBoardingSegundaViewController.swift in Sources */,
 				0CD533F82331871000C9C1C6 /* AppDelegate.swift in Sources */,
+				0CD5340C233191B000C9C1C6 /* OnBoardingPrimeraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

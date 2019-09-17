@@ -16,6 +16,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
+        
+        let exploradoAntes = UserDefaults.standard.bool(forKey: "hasLaunched")
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let launchStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let mainStorboard = UIStoryboard(name: "Main", bundle: nil)
+        var viewControllerDisponible: UIViewController
+        if exploradoAntes{
+            viewControllerDisponible = mainStoryboard.instantiateViewController()!
+        }else{
+            viewControllerDisponible=launchStoryboard.instantiateViewController(withIdentifier: "onboardingBienvenida")
+        }
+        UserDefaults.standard.set(true, forKey: "haslLaunched")
+        self.window?.rootViewController = viewControllerDisponible
+        self.window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
