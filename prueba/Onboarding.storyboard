@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="P5C-Le-954">
+            <objects>
+                <viewController id="j5K-UN-T2v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kc5-dV-VWX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola 🤖👻👽Bienvenido a esta nueva aplicacion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnK-5A-HA2">
+                                <rect key="frame" x="8.5" y="369.5" width="397" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="5uu-h4-gMt"/>
+                                    <constraint firstAttribute="width" constant="397" id="QIk-mv-f1m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CT-pn-pay">
+                                <rect key="frame" x="56" y="666" width="303" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="NEXT -&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wnK-5A-HA2" firstAttribute="centerX" secondItem="Kc5-dV-VWX" secondAttribute="centerX" id="MhZ-0F-LGw"/>
+                            <constraint firstItem="wnK-5A-HA2" firstAttribute="centerY" secondItem="Kc5-dV-VWX" secondAttribute="centerY" id="ncm-pz-CEC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RkN-gl-UrH"/>
+                    </view>
+                    <connections>
+                        <segue destination="mkY-lG-TiZ" kind="show" id="iKA-MZ-9VG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8H-gw-gMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.7971014492753632" y="65.625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="999-SZ-pyG">
+            <objects>
+                <viewController id="mkY-lG-TiZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="afP-md-l3X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esta app nos cambiara el muno 🌏🌎🌍" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-49-Kiu">
+                                <rect key="frame" x="8.5" y="369.5" width="397" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="ftD-FY-9XO"/>
+                                    <constraint firstAttribute="width" constant="397" id="u6A-Pz-I4Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGk-d1-efz">
+                                <rect key="frame" x="30" y="678" width="354" height="95"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="NEXT -&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ku-49-Kiu" firstAttribute="centerY" secondItem="afP-md-l3X" secondAttribute="centerY" id="IeK-ky-lMh"/>
+                            <constraint firstItem="1Ku-49-Kiu" firstAttribute="centerX" secondItem="afP-md-l3X" secondAttribute="centerX" id="ehn-uT-RHK"/>
+                            <constraint firstItem="nGk-d1-efz" firstAttribute="leading" secondItem="PeE-Ul-RqT" secondAttribute="leading" constant="30" id="qDR-to-9mm"/>
+                            <constraint firstItem="PeE-Ul-RqT" firstAttribute="trailing" secondItem="nGk-d1-efz" secondAttribute="trailing" constant="30" id="tWG-eg-a4f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PeE-Ul-RqT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRX-mn-gS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721.73913043478262" y="65.625"/>
+        </scene>
+    </scenes>
+</document>
